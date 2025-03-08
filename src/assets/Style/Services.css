@@ -1,0 +1,54 @@
+.service {
+    background-color: var(--background);
+    padding-top: 150px;
+    height: auto;
+    position: relative;
+
+}
+
+.profImg {
+    width: 100%;
+    
+}
+.profImg img{
+    height: 600px;
+    margin-left: 70px;
+}
+
+.details {
+    padding-top: 160px;
+    margin-right: 60px;
+
+
+}
+
+.details h2 {
+    font-family: var(--fonts);
+    text-transform: uppercase;
+    color: var(--color-blue);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.details p{
+    color: var(--color-black);
+}
+.button{
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    width: 190px;
+    height: 48px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-family: var(--fonts);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.button:hover{
+    background-color: transparent;
+    color:var(--color-orange);
+    border: 1px solid var(--color-orange);
+
+}

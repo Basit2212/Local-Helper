@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap");
+
+:root {
+    /* Font Family */
+    --fonts: 'Merriweather Sans', sans-serif;
+
+
+
+
+
+
+
+    /* Colors */
+    --color-black: #040000;
+    --color-white: #ffffff;
+    --color-orange: #ff8a1d;
+    --color-blue: #0355cc;
+    --color-grey: #444;
+    --shadow-color: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    --background:#d1e3ff;
+    --card:#726dae;
+
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn-class{
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    width: 190px;
+    height: 48px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: var(--fonts);
+    text-transform: uppercase;
+}
+.btn-class:hover{
+    background-color: transparent;
+    color:var(--color-orange);
+    border: 1px solid var(--color-orange);
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}

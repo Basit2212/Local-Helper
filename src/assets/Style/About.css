@@ -1,0 +1,42 @@
+.about{
+    margin: 60px;
+}
+.detail-box{
+    margin-left: 60px;
+    margin-top: 85px;
+    
+
+}
+.detail-box h2{
+    text-transform:uppercase ;
+    font-weight: bold;
+}
+.detail-box p{
+    color: var(--color-black);
+}
+.about-image img {
+    margin-left: 20px;
+    margin-bottom: 70px;
+    height: 440px;
+
+}
+.btn{
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    width: 185px;
+    height: 48px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid var(--color-blue);
+    border-radius: 2px;
+    font-size: 15px;
+    font-family: var(--fonts);
+    text-transform: uppercase;
+    
+
+}
+.btn:hover{
+    background-color: transparent;
+    color:var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
