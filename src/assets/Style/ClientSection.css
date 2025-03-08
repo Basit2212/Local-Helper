@@ -1,0 +1,7 @@
+.client-section h2{
+    font-family: var(--fonts);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 90px;
+    color: var(--color-black);
+}
