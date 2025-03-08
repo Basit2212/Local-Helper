@@ -1,26 +1,29 @@
-.about{
+.about {
     margin: 60px;
 }
-.detail-box{
+
+.detail-box {
     margin-left: 60px;
     margin-top: 85px;
-    
-
 }
-.detail-box h2{
-    text-transform:uppercase ;
+
+.detail-box h2 {
+    text-transform: uppercase;
     font-weight: bold;
 }
-.detail-box p{
+
+.detail-box p {
     color: var(--color-black);
 }
+
 .about-image img {
     margin-left: 20px;
     margin-bottom: 70px;
     height: 440px;
-
+    max-width: 100%; /* Ensures the image resizes properly */
 }
-.btn{
+
+.btn {
     color: var(--color-white);
     background-color: var(--color-blue);
     width: 185px;
@@ -32,11 +35,42 @@
     font-size: 15px;
     font-family: var(--fonts);
     text-transform: uppercase;
-    
-
 }
-.btn:hover{
+
+.btn:hover {
     background-color: transparent;
-    color:var(--color-blue);
+    color: var(--color-blue);
     border: 1px solid var(--color-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about {
+        margin-top: 80px;
+    }
+    .detail-box {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .detail-box h2 {
+        font-size: 33px;
+    }
+    .btn {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin-top: 80px;
+    }
+    .detail-box {
+        margin:30px;
+    }
+    .about-image img {
+        margin-top: 20px;
+        height: auto;
+    }
 }
