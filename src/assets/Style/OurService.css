@@ -1,10 +1,7 @@
 .our-service {
     padding-top: 100px;
     background: var(--color-white);
-
-
 }
-
 
 .service-card h2 {
     display: flex;
@@ -20,14 +17,13 @@
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    width: 280px;
+    width: 350px;
     margin: 10px;
 }
 
 .card_box:hover {
     transform: translateY(-10px);
     /* background-color: var(--color-orange); */
-
 }
 
 .card_image img {
@@ -50,13 +46,49 @@
     display: flex;
     justify-content: center;
     padding-top: 150px;
+    flex-wrap: wrap;
 }
 
-/* .card_box:hover .card_title,
-.card_box:hover .card_text {
-    color: var(--color-white);
-} */
-.button-class{
+.button-class {
     display: flex;
     justify-content: center;
+    margin-top: -80px;
+    /* Move the button up by a few pixels */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .card-service {
+        padding-top: 100px;
+    }
+
+    .button-class {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-service {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .card_box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .card_title {
+        font-size: 18px;
+    }
+
+    .card_text {
+        font-size: 13px;
+    }
+
+    .button-class {
+        margin-top: 20px;
+        /* Adjust this as needed */
+    }
 }

@@ -33,3 +33,77 @@ header .nav-link:hover{
     transition:ease-out 1ms;
 
 }
+/* Default Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    /* background: none; Change to your preferred color */
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    backdrop-filter: blur(5px); /* Blurry effect */
+    padding: 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+    width: 24px;
+    height: 2px;
+    background-color: #edf2f7;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom Hamburger Lines */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color:  #edf2f7;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+    top: -7px;
+}
+
+.navbar-toggler-icon::after {
+    top: 7px;
+}
+
+/* Navbar Toggle Clicked (Expanded State) */
+.navbar-toggler[aria-expanded="true"] {
+    background: var(--color-dark-blue); /* Change background color when clicked */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Change Navbar Background when Open */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+}
+
+/* Animate to "X" when clicked */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Make the Navbar Background Blurry when Open */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
