@@ -5,6 +5,7 @@ import About from './Sections/About'
 import HomeServiceSection from './Sections/HomeServiceSection'
 import OurServices from './Sections/OurServices'
 import ClientSection from './Sections/ClientSection'
+import ContactUs from './Sections/ContactUs'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <HomeServiceSection/>
         <OurServices/>
         <ClientSection/>
+        <ContactUs/>
 
 
     </Layout>

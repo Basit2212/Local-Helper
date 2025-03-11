@@ -1,0 +1,73 @@
+.contact-form {
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.heading-contact h2 {
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--fonts);
+}
+
+.heading-contact {
+    padding-bottom: 10px;
+    margin-left: 25px;
+}
+.form{
+    margin: 20px;
+}
+
+.form .input-form {
+    padding: 15px;
+    width: 90%;
+    margin: 10px;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form .message-form {
+    padding: 50px;
+    width: 90%;
+    margin: 10px;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 15px
+
+}
+
+.new-btn {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    width: 165px;
+    height: 38px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: var(--fonts);
+    text-transform: uppercase;
+}
+
+.new-btn:hover {
+    background-color: transparent;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
+.buttn{
+    padding-left: 10px;
+}
+.error {
+    color: white;
+    background: red;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}
