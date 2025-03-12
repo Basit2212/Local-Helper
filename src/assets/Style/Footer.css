@@ -1,0 +1,30 @@
+.footer-section{
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 75px 0;
+    text-align: center;
+    color: var(--color-white);
+
+}
+.footer-section h4{
+    text-transform: uppercase;
+    font-family: var(--fonts);
+    font-weight: bold;
+}
+.footer-item{
+    padding: 30px;
+    
+}
+.footer-item .footerImg{
+    font-size: 21px;
+    height: 80px;
+    width: 80px;
+    background-color: var(--color-blue);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    
+}
