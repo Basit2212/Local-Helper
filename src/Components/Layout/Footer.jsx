@@ -9,7 +9,7 @@ const icons = [
   },
   {
     Image: <i className="bi bi-telephone-fill"></i>,
-    text: "92 1234567890"
+    text: "+92 1234567890"
   },
   {
     Image: <i className="bi bi-envelope-fill"></i>,
@@ -23,14 +23,22 @@ const Footer = () => {
       <Container>
         <h4>Get in touch</h4>
         <Row>
-          {icons.map((item, index) => (
-            <Col  key={index} md={4} className="footer-item mx-auto">
-              <div className="footerImg">
-                {item.Image}
-              </div>
-              <p>{item.text}</p>
-            </Col>
-          ))}
+          <Col className='mx-auto' lg={10}>
+            <div className="line">
+            <Row className="justify-content-center position-relative">
+  {icons.map((item, index) => (
+    <Col key={index} md={4} className="footer-item">
+      <div className="footerImg">
+        {item.Image}
+      </div>
+      <p>{item.text}</p>
+      {/* Line between the items */}
+      {index < icons.length - 1 && <div className="footer-line"></div>}
+    </Col>
+  ))}
+</Row>
+            </div>
+          </Col>
         </Row>
       </Container>
     </section>
