@@ -16,6 +16,20 @@ const icons = [
     text: "demo@gmail.com"
   }
 ]
+const socialIcons = [
+  {
+    image: <i class="bi bi-facebook"></i>
+  },
+  {
+    image: <i class="bi bi-twitter-x"></i>
+  },
+  {
+    image: <i class="bi bi-youtube"></i>
+  },
+  {
+    image: <i class="bi bi-instagram"></i>
+  }
+]
 
 const Footer = () => {
   return (
@@ -24,21 +38,30 @@ const Footer = () => {
         <h4>Get in touch</h4>
         <Row>
           <Col className='mx-auto' lg={10}>
-            <div className="line">
             <Row className="justify-content-center position-relative">
-  {icons.map((item, index) => (
-    <Col key={index} md={4} className="footer-item">
-      <div className="footerImg">
-        {item.Image}
-      </div>
-      <p>{item.text}</p>
-      {/* Line between the items */}
-      {index < icons.length - 1 && <div className="footer-line"></div>}
-    </Col>
-  ))}
-</Row>
-            </div>
+              {icons.map((item, index) => (
+                <Col key={index} md={4} className="footer-item">
+                  <div className="footerImg">
+                    {item.Image}
+                  </div>
+                  <p>{item.text}</p>
+                  {/* Line between the items */}
+                  {index < icons.length - 1 && <div className="footer-line"></div>}
+                </Col>
+              ))}
+
+            </Row>
           </Col>
+          <div className="follow-Us">
+            <h4>Follow Us</h4>
+            <div className="icons">
+              {socialIcons.map((item, index) => (
+                <div className='icon-image'>
+                  {item.image}
+                </div>
+              ))}
+            </div>
+          </div>
         </Row>
       </Container>
     </section>
