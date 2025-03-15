@@ -60,8 +60,14 @@ const Footer = () => {
                   {item.image}
                 </div>
               ))}
+              
             </div>
           </div>
+          <div className="last-section">
+            <div className='line'></div>
+            <div className='last '><p>© 2025 All Rights Reserved By Local Helpers</p></div>
+          </div>
+
         </Row>
       </Container>
     </section>

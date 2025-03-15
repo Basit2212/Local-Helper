@@ -1,7 +1,5 @@
 .hero_section{
     background: var(--background);
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
     padding-top: 90px;
     height: auto;
     overflow: hidden;
@@ -25,7 +23,6 @@
 
 @media (max-width: 1024px) {
     .detail_box {
-        /* text-align: center;  */
         padding: 20px; 
     }
 
@@ -38,7 +35,6 @@
     } 
 }
 .worker{
-    /* position: relative; */
     height: 100%;
 }
 .worker img{
@@ -46,10 +42,7 @@
     height: 800px;
     object-fit: cover; 
     bottom: 20px; 
-    
-
 }
-
 
 @media (max-width: 1024px){
     .worker img{
@@ -63,7 +56,11 @@
 }
 .cards_section{
     width: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .card_box{
     position: relative;
@@ -71,11 +68,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     bottom: 90px;
     background-color: var(--color-white);
+    width: 30%;
+    margin: 10px;
 }   
 .cards_section .row > .card_box:nth-child(2) {
-
     background-color: var(--color-orange); 
-    
 }
 .cards_section .row > .card_box:nth-child(2) .cardImg {
     color: var(--color-white);
@@ -83,7 +80,6 @@
 .cards_section .row > .card_box:nth-child(2) .cardTitle {
     color: var(--color-white);
 }
-
 .card_box .cardImg{
     font-size: 90px;
     color: var(--card);
@@ -94,19 +90,11 @@
     color: var(--card);
     font-family: var(--fonts);
 }
-.cards_section .row > .card_box:nth-child(1):hover{
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    
-
-
-}
+.cards_section .row > .card_box:nth-child(1):hover,
 .cards_section .row > .card_box:nth-child(3):hover{
     background-color: var(--color-orange);
     color: var(--color-white);
-
 }
-
 .cards_section .row > .card_box:nth-child(1):hover .cardImg,
 .cards_section .row > .card_box:nth-child(3):hover .cardImg,
 .cards_section .row > .card_box:nth-child(1):hover .cardTitle,
@@ -115,22 +103,38 @@
     background-color: var(--color-orange);
 }
 
-@media (max-width: 992px) {  /* Tablet aur chhoti screens ke liye */
+@media (max-width: 992px) {
     .cards_section {
-      
-        padding-top: 60px; /* Upar se gap badha do */
-        display: flex;
-        justify-content: center;
+        padding-top: 60px;
+        flex-direction: column;
     }
     
     .card_box {
-        bottom: 0 !important; /* Overlap hata do */
-        margin-top: 20px; /* Neeche space de do */
+        bottom: 0 !important;
+        margin-top: 20px;
+        width: 80%;
     }
 }
-@media (max-width: 768px) {
-    .cards_section{
-        padding-left: 200px;
+
+@media (max-width: 576px) {
+    .card_box {
+        width: 90%;
+        padding: 20px;
     }
-    
+}
+
+@media (max-width: 375px) {
+    .card_box {
+        width: 95%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: 0 !important;
+    }
+    .worker img{
+        height: 500px;
+        margin-left: 20px;
+    }
 }
