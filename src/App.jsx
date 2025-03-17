@@ -17,13 +17,15 @@ function App() {
   return (
     <>
     <Router>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/Home' element={<Home />}/>
-        <Route path='/About' element ={ <> <Header/> <About /> <Footer/> </>   }/>
-        <Route path='/Services' element ={ <> <Header/> <OurServices /> <Footer/> </>   }/>
-        <Route path='/Contact' element ={ <> <Header/> <ContactUs /> <Footer/> </>   }/>
+        <Route path='/About' element ={ <About />   }/>
+        <Route path='/Services' element ={ <OurServices />   }/>
+        <Route path='/Contact' element ={<ContactUs />    }/>
       </Routes>
+      <Footer/>
     </Router>
     
       </>

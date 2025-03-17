@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import '../../assets/Style/HeaderStyle.css'
-
-
-
-
+import '../../assets/Style/HeaderStyle.css';
 
 const Header = () => {
+    const location = useLocation();
+    const isHomePage = location.pathname === '/' || location.pathname === '/Home';
+
     return (
-        <header>
-        
+        <header className={!isHomePage ? 'custom-header' : ''}>
             <Navbar collapseOnSelect expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="/">Local Helper</Navbar.Brand>
@@ -28,7 +27,7 @@ const Header = () => {
                 </Container>
             </Navbar>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
