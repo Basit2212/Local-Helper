@@ -14,7 +14,7 @@ const Header = () => {
         <header className={!isHomePage ? 'custom-header' : ''}>
             <Navbar collapseOnSelect expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="/">Local Helper</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/Local-Helper/">Local Helper</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
